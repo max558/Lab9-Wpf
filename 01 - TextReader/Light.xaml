@@ -34,6 +34,7 @@
 
     <Style x:Key="ComboBoxStyle" BasedOn="{StaticResource WindowStyle}">
         <Setter Property="ComboBox.Foreground" Value="Black"/>
+        <Setter Property="ComboBox.Background" Value="White"/>
         <Setter Property="ComboBox.Margin" Value="5"/>
         <Setter Property="ComboBox.Padding" Value="5"/>
     </Style>
@@ -45,7 +46,7 @@
     <Style x:Key="menuStyle" BasedOn="{StaticResource WindowStyle}">
         <Setter Property="Menu.Margin" Value="0"/>
         <Setter Property="Menu.Padding" Value="1"/>
-        <Setter Property="MenuItem.Foreground" Value="Black"/>
         <Setter Property="Menu.Foreground" Value="Black"/>
+        <Setter Property="MenuItem.Background" Value="#FFF7F7F7"/>
     </Style>
 </ResourceDictionary>

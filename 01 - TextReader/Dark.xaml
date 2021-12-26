@@ -52,6 +52,7 @@
         <Setter Property="Menu.Margin" Value="0"/>
         <Setter Property="Menu.Padding" Value="1"/>
         <Setter Property="Menu.Foreground" Value="SteelBlue"/>
+        <Setter Property="MenuItem.Background" Value="Black"/>
     </Style>
 
 </ResourceDictionary>
