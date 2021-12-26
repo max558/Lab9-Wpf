@@ -1,0 +1,51 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="WindowStyle">
+        <Setter Property="Control.Background" Value="#FFF7F7F7"/>
+    </Style>
+    
+    <Style x:Key="TexBlockStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="TextBlock.Margin" Value="5"/>
+        <Setter Property="TextBlock.Padding" Value="5"/>
+        <Style.Triggers>            
+            <DataTrigger Binding="{Binding ElementName=radioBlack, Path=IsChecked}" Value="True">
+                <Setter Property="TextBlock.Foreground" Value="Black"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding ElementName=radioRed, Path=IsChecked}" Value="True">
+                <Setter Property="TextBlock.Foreground" Value="Red"/>
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style x:Key="ButtonStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="Control.Foreground" Value="Black"/>
+        <Setter Property="Control.BorderBrush" Value="#FF6C6A6A"/>
+        <Setter Property="Control.Margin" Value="1"/>
+        <Setter Property="Control.Padding" Value="1"/>
+    </Style>
+    
+    <Style x:Key="ToolBarStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="ToolBar.Foreground" Value="Black"/>
+        <Setter Property="ToolBar.Margin" Value="5"/>
+        <Setter Property="ToolBar.Padding" Value="5"/>
+    </Style>
+    
+    <Style x:Key="ToolBarTrayStyle" BasedOn="{StaticResource WindowStyle}"/>
+
+    <Style x:Key="ComboBoxStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="ComboBox.Foreground" Value="Black"/>
+        <Setter Property="ComboBox.Margin" Value="5"/>
+        <Setter Property="ComboBox.Padding" Value="5"/>
+    </Style>
+    
+    <Style x:Key="RadioButtonStyle">
+        <Setter Property="RadioButton.Foreground" Value="Black"/>
+    </Style>
+
+    <Style x:Key="menuStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="Menu.Margin" Value="0"/>
+        <Setter Property="Menu.Padding" Value="1"/>
+        <Setter Property="MenuItem.Foreground" Value="Black"/>
+        <Setter Property="Menu.Foreground" Value="Black"/>
+    </Style>
+</ResourceDictionary>
