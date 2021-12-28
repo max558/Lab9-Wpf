@@ -77,7 +77,7 @@
         </ToolBarTray>
         <TextBox x:Name="texBox" 
                  Grid.Row="2" 
-                 Style="{DynamicResource TexBlockStyle}"
+                 Style="{DynamicResource TexBoxStyle}"
                  FontSize="14" 
                  FontFamily="Arial" 
                  SpellCheck.IsEnabled="True" 
