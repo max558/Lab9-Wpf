@@ -4,17 +4,17 @@
         <Setter Property="Control.Background" Value="Black"/>
     </Style>
     
-    <Style x:Key="TexBlockStyle" BasedOn="{StaticResource WindowStyle}">
-        <Setter Property="TextBlock.Margin" Value="5"/>
-        <Setter Property="TextBlock.Padding" Value="5"/>
-        <Style.Triggers>            
+    <Style x:Key="TexBoxStyle" BasedOn="{StaticResource WindowStyle}">
+        <Setter Property="TextBox.Margin" Value="5"/>
+        <Setter Property="TextBox.Padding" Value="5"/>
+        <Style.Triggers>
             <DataTrigger Binding="{Binding ElementName=radioBlack, Path=IsChecked}" Value="True">
-                <Setter Property="TextBlock.Foreground" Value="Wheat"/>
+                <Setter Property="TextBox.Foreground" Value="White"/>
             </DataTrigger>
             <DataTrigger Binding="{Binding ElementName=radioRed, Path=IsChecked}" Value="True">
-                <Setter Property="TextBlock.Foreground" Value="Red"/>
+                <Setter Property="TextBox.Foreground" Value="Red"/>
             </DataTrigger>
-        </Style.Triggers>        
+        </Style.Triggers>
     </Style>
     
     <Style x:Key="ButtonStyle" BasedOn="{StaticResource WindowStyle}">      
